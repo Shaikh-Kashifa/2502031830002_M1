@@ -20,8 +20,9 @@ body{
     background-image: url('pink.jpg');
     background-repeat: repeat;
 }
+/*css position fixed absolute and relative*/
 h1{
-    position: fixed;
+    position: absolute;
     left: 100px;
     top: 50px;
 }
