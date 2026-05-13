@@ -5,38 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
     <title>Document</title>
-    <style>
-        
-    </style>
+    
 </head>
 <body>
-    <header>
-        <h2>Responsive website with Media Query</h2>
+    
+        <!-- Navigation Bar -->
         <nav>
-            <a href="#home.html">Home</a>
-            <a href="#about.html">About</a>
-            <a href="#contact.html">Contact</a>
-                  
+            <div class="logo">HappyShop</div>
+            <ul>
+                <li><a href="#home.html">Home</a></li>
+                <li><a href="#products.html">Products</a></li>
+                <li><a href="#about.html">About</a></li>
+                <li><a href="#contact.html">Contact</a></li>
+            </ul>
         </nav>
-    </header>
-    <main>
-        <section>
-            <h3>Section 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
-        </section>
-        <section>
-            <h3>Section 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
-        </section>
-        <section>
-                <h3>Section 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
-        </section>
-    </main>
-    <footer>
-        <p>@2026|ecommerce website</p>
 
-    </footer>
+
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to <span>HappyShop</span></h1>
+                <p>Your one-stop shop for all your needs!</p>
+                <button class="btn">Shop Now</button>
+        </section>
+
+
+
+        <!-- Products section -->
+         <section class="products">
+            <h2 class="section-title">Trending Products</h2>
+            <div class="product-grid">
+
+                <!-- card 1 -->
+                 <div class="card">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000">
+                    <div class="card-content">
+                        <h3>Premium Shoes</h3>
+                        <div class="price">$89</div>
+                        <button>Add TO Cart</button>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                 <div class="card">
+                    <img src="https://i.pinimg.com/736x/be/59/46/be5946f91892442a3e053429c6be3c21.jpg" alt="Tshirt">
+                    <div class="card-content">
+                        <h3>Luxury T-Shirt</h3>
+                        <div class="price">$35</div>
+                        <button>Add TO Cart</button>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                 <div class="card">
+                    <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?q=80&w=1000" alt="Glasses">
+                    <div class="card-content">
+                        <h3>Smart Glasses</h3>
+                        <div class="price">$140</div>
+                        <button>Add TO Cart</button>
+                    </div>
+                </div>
+
+                <!-- card 4 -->
+                 <div class="card">
+                    <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=1000">
+                    <div class="card-content">
+                        <h3>Fashion Bag</h3>
+                        <div class="price">$70</div>
+                        <button>Add TO Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Sale Section -->
+        <section class="sale">
+            <h2>Biggest Sale 2026</h2>
+            <p>Get Up To 70% Discount On Fashion Products</p>
+            <button class="btn">Explore Deals</button>
+        </section>
+
+
+        <!-- Footer -->
+         <footer>
+            <p>&copy; 2026 HappyShop | Designed By Kashifa</p>
+         </footer>
     
 </body>
 </html>
