@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!------ Inner HTML ------->
+     <h3>Inner HTML</h3>
+     <p id="demo"></p>
+     <script>
+         document.getElementById("demo").innerHTML = "Hello World!";
+     </script>
+
+
+
+    <!------ Internal JavaScript ------>
+    <script>
+        alert("Hello! This is your first javascript code.")
+    </script>
+
+
+
+    <!------ External JavaScript ------>
+    <h3>External JavaScript</h3>
+    <script src="js1.js"></script>
+    
+
+
+    <!------ Identifier in JavaScript (variable) ------>
+    <h3>Identifier in JavaScript (variable)</h3>
+    <p id="add"></p>
+    <p id="sub"></p>
+    <p id="mul"></p>
+    <p id="div"></p>
+    
+    <script>
+        var x=2;
+        var y=3;
+        var z=x+y;
+        document.getElementById("add").innerHTML =  x + " + " + y + " = " + z;
+
+        var x=10;
+        var y=2;
+        var z=x-y;
+        document.getElementById("sub").innerHTML =  x + " - " + y + " = " + z;
+
+        var x=5;
+        var y=2;
+        var z=x*y;
+        document.getElementById("mul").innerHTML =  x + " * " + y + " = " + z;
+
+        var x=10;
+        var y=2;
+        var z=x/y;
+        document.getElementById("div").innerHTML =  x + " / " + y + " = " + z;
+    </script>
+
+
+
+    <!--- Data Types in JavaScript --->
+    <h3>Data Types in JavaScript</h3>
+    
+    <script>
+        var a = "Hello World!"; // String
+        var b = 52; // Number
+        var c = true; // Boolean
+        var d = null; // Null
+        var e = undefined; // Undefined
+        var f = ["HTML", "CSS", "JavaScript"]; // Array
+        var g = {name:"Kashifa", age:20}; // Object
+
+        document.write(typeof(a) + "<br>");
+        document.write(typeof(b) + "<br>");
+        document.write(typeof(c) + "<br>");
+        document.write(typeof(d) + "<br>");
+        document.write(typeof(e) + "<br>");
+        document.write(typeof(f) + "<br>");
+        document.write(typeof(g) + "<br>");
+    </script>
+
+    <!--- Operators in JavaScript --->
+    <h3>Operators in JavaScript</h3>
+    <p id="value"></p>
+
+    <script>
+        var x = 10;
+        var y = 20;
+        document.getElementById("value").innerHTML =  " x = " + x + " y = " + y;
+
+        //increment operator
+        x++;
+        document.write("Increment of x : " + x + "<br>");
+
+        //decrement operator
+        y--;
+        document.write("Decrement of y : " + y + "<br>");
+
+        //Comparison operator
+        document.write("x is equal to y : " + (x == y) + "<br>");
+        document.write("x is not equal to y : " + (x != y) + "<br>");
+        document.write("x is greater than y : " + (x >= y) + "<br>");
+        document.write("x is less than y : "  + (x <= y) + "<br>");
+
+    </script>
+    
+</body>
+</html>

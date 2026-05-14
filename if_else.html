@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else</title>
+</head>
+<body>
+
+    <h4> 1. Number is Even or Odd</h4>
+
+    <script>
+        let num = 20;
+        document.write("num = " + num + "<br>");
+        if (num % 2 == 0)
+        {
+            document.write(num + " is Even");
+        }
+        else
+        {
+            document.write(num + " is odd");
+        }
+
+    </script>
+
+
+
+
+    <h4> 2. Check Result - Pass or Fail</h4>
+
+    <script>
+        let marks = 65;
+        document.write("Marks =" + marks + "<br>")
+        if (marks > 33)
+        {
+            document.write("Pass");
+        }
+        else
+        {
+            document.write("Fail");
+        }
+    </script>
+
+
+
+    <h4> 3. Check Leap Year</h4>
+
+    <script>
+        let year = 2020;
+        document.write("Year = " + year + "<br>");
+        if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0))
+        { 
+            document.write(year + " is Leap year");
+        }
+        else
+        {
+            document.write(year +" is not  Leap year")
+        }
+    </script>
+
+
+
+    <h4> 4. Check for Driving Elligibility</h4>
+
+    <script>
+        let age = 20;
+        document.write("Age = " + age + "<br>");
+        if (age >= 18)
+        {
+            document.write("You are Elligible for driving");
+        }
+        else
+        {
+            document.write("You are not Elligible for driving");
+        }
+    </script>
+
+
+</body>
+</html>
