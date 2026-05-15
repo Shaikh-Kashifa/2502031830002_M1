@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>1. Print 1 to 10 Number:</h4>
+    <Script>
+        var a;
+        for (a = 1 ; a <= 10 ; a++)
+        {
+            document.write(a + "<br>");
+        }
+    </Script>
+
+    <h4>2. Display Students Name:</h4>
+    <script>
+        var n;
+        var Students_name=["Misba","Sarah","Madiha","Soumya","Purvi"]
+        for (n = 0 ; n < Students_name.length ; n++ )
+    {
+        document.write(n +". "+ Students_name[n] + "<br>");
+    }
+    </script>
+
+    <h4>3. Calculate total marks:</h4>
+    <script>
+        var m;
+        var total_marks=0;
+        var student_marks=[85,56,78,90,78]
+        for (m = 0 ; m < student_marks.length ; m++ )
+    {
+        total_marks += student_marks[m];
+    }
+        document.write( "Total Marks:" + total_marks);
+    </script>
+
+
+    <h4>4. Multiplication table of 5:</h4>
+    <script>
+        var num;
+        var table=5;
+        for (num = 1 ; num <= 10 ; num++ )
+    {
+        document.write(table + " * " + num + " = " + (num*table) + "<br>");
+    }
+    </script>
+
+
+
+    <h4>5. Print first 20 Even numbers:</h4>
+    <Script>
+        var number;
+        var count=20;
+        for (number=0 ; number<count ; number+=2)
+        {
+            document.write(number + "<br>");
+        }
+    </Script>
+
+
+    <h4>6. Print first 20 Odd numbers:</h4>
+    <Script>
+        var number;
+        var count=20;
+        for (number=1 ; number<count ; number+=2)
+        {
+            document.write(number + "<br>");
+        }
+    </Script>
+
+
+    <h4>7. Reverse a String:</h4>
+    <script>
+        var i;
+        var str="Hello World";
+        var rev_str="";
+        for ( i = str.length - 1 ; i >=0 ; i--)
+        {
+            rev_str += str[i];
+        }
+        document.write("Original String: " + str + "<br>");
+        document.write("Reverse String: " + rev_str);
+    </script>
+    
+
+    <h4>8. Sum of Array Elements:</h4>
+    <script>
+        var t;
+        var sum=0;
+        var arr=[177,31,52,17,]
+        for (t = 0 ; t < arr.length ; t++ )
+    {
+        sum += arr[t];
+    }
+        document.write( "Sum of Array Elements : " + sum);
+    </script>
+
+
+    
+
+
+
+
+</body>
+</html>
