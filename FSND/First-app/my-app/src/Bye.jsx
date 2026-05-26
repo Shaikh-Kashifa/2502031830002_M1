@@ -1,8 +1,5 @@
-
-
-function Bye(){
-    const name="Kashifa"
-    return <h2> Bye {name}</h2>
-
+function Bye() {
+  const name = "Kashifa";
+  return <h2> Bye {name}</h2>;
 }
-export default Bye
+export default Bye;

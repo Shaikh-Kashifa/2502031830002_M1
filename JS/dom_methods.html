@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h4>Using getElementById()</h4>
+    <input type="text" id="myText" placeholder="Enter your name" />
+    <button onclick="myFunction()">Click Me</button>
+    <script>
+      function myFunction() {
+        var txt = document.getElementById("myText");
+        alert("Hello " + txt.value);
+      }
+    </script>
+
+    <h4>Using getElementsByClassName()</h4>
+    <input type="text" name="myText" placeholder="Enter your name" />
+    <button onclick="myFunc()">Click Me</button>
+    <script>
+      function myFunc() {
+        var a = document.getElementsByName("myText")[0];
+        alert("Hello " + a.value);
+      }
+    </script>
+
+    <h4>Forms using DOM</h4>
+
+    <form name="myForm">
+      <input type="text" name="username" placeholder="Username" />
+      <input type="text" name="password" placeholder="Password" />
+      <input type="button" onClick="formfunction()" value="Submit" />
+    </form>
+
+    <script>
+      function formfunction() {
+        var a = document.forms["myForm"];
+        var u = a.username.value;
+        var p = a.password.value;
+        if (u == "admin" && p == "123") {
+          alert("valid");
+        } else {
+          alert("invalid");
+        }
+      }
+    </script>
+  </body>
+</html>

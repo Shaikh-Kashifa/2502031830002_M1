@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions and Variable Argument in js</title>
+  </head>
+  <body>
+    <!-- Function in JavaScript -->
+    <script>
+      function foo(p1) {
+        if (typeof p1 == "number") return 0;
+        else if (typeof p1 == "string") return "zero";
+      }
+
+      document.write(foo(1) + "<br>");
+      document.write(foo("abc") + "<br>");
+      document.write(foo() + "<br>");
+    </script>
+
+    <!-- Variable Arguments in JavaScript -->
+    <script>
+      function sum() {
+        var s = 0;
+
+        for (var i = 0; i < arguments.length; i++) {
+          s += arguments[i];
+        }
+
+        return s;
+      }
+
+      document.write(sum(1, 2, 3) + "<br>");
+      document.write(sum(1, 2, 3, 4, 5) + "<br>");
+      document.write(sum(1, 2, "3", 4, 5) + "<br>");
+    </script>
+  </body>
+</html>
