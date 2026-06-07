@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f4f5f7;
+    }
+
+    .auth-container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+      padding: 120px 8% 50px;
+      background: #f4f5f7;
+    }
+
+    .auth-image {
+      flex: 1;
+    }
+
+    .auth-image img {
+      width: 100%;
+      height: 650px;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+
+    .auth-form {
+      flex: 1;
+      background: white;
+      padding: 50px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .auth-form h2 {
+      font-size: 42px;
+      color: #1e3c51;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .auth-form p {
+      color: #777;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .auth-form input {
+      width: 100%;
+      padding: 15px 20px;
+      margin-bottom: 18px;
+      border: 1px solid #ddd;
+      border-radius: 50px;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .auth-form input:focus {
+      border-color: #204153;
+      box-shadow: 0 0 8px rgba(32, 65, 83, 0.2);
+    }
+
+    .auth-form button {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 50px;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      background: linear-gradient(to right, #44565e, #204153);
+      z-index: 1;
+    }
+
+    .auth-form button:hover {
+      transform: translateY(-2px);
+      background: #f57c42;
+    }
+
+    .auth-links {
+      text-align: right;
+      margin-top: 15px;
+    }
+
+    .auth-links a {
+      color: #44565e;
+      text-decoration: none;
+    }
+
+    .bottom-text {
+      margin-top: 25px;
+      text-align: center;
+    }
+
+    .bottom-text a {
+      color: #f57c42;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    @media (max-width: 992px) {
+      .auth-container {
+        flex-direction: column;
+      }
+
+      .auth-image {
+        display: none;
+      }
+    }
+  </style>
+  <body>
+    <!-- login.html -->
+
+    <section class="auth-container">
+      <div class="auth-image">
+        <img
+          src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b"
+          alt=""
+        />
+      </div>
+
+      ```
+      <div class="auth-form">
+        <h2>Welcome Back</h2>
+
+        <p>Login to your account</p>
+
+        <form action="home.html">
+          <input type="email" placeholder="Email Address" required />
+          <input type="password" placeholder="Password" required />
+
+          <button type="submit">Login</button>
+
+          <div class="auth-links">
+            <a href="#">Forgot Password?</a>
+          </div>
+
+          <p class="bottom-text">
+            Don't have an account?
+            <a href="signup.html">Sign Up</a>
+          </p>
+        </form>
+      </div>
+      ```
+    </section>
+  </body>
+</html>

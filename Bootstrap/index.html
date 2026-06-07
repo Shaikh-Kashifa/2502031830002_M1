@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<title>Bootstrap</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">FashionHub</a>
+
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="position-relative">
+    <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=1600"
+     class="img-fluid w-100"
+     style="height:550px; object-fit:cover;">
+
+    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+        <h1 class="display-2 fw-bold">FashionHub</h1>
+        <p class="lead fs-3">Discover Your Style</p>
+        <button class="btn btn-warning btn-lg mt-2">Shop Now</button>
+    </div>
+</section>
+
+
+<!-- Products -->
+<section id="products" class="container py-5">
+    <h2 class="text-center mb-5">Featured Products</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500"
+                    class="card-img-top"
+                    style="height:300px; object-fit:cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Casual T-Shirt</h5>
+                    <p class="card-text">Comfortable cotton t-shirt.</p>
+                    <button class="btn btn-success">₹499</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=500"
+                    class="card-img-top"
+                    style="height:300px; object-fit:cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Women's Kurti</h5>
+                    <p class="card-text">Stylish ethnic wear.</p>
+                    <button class="btn btn-success">₹899</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=500"
+                    class="card-img-top"
+                    style="height:300px; object-fit:cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Blue Jeans</h5>
+                    <p class="card-text">Premium quality denim jeans.</p>
+                    <button class="btn btn-success">₹1199</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- About us -->
+
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">About FashionHub</h2>
+            <p class="text-muted">
+                Your one-stop destination for trendy and affordable fashion.
+            </p>
+        </div>
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-5 mb-3">
+                <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=500"
+                     class="img-fluid rounded shadow"
+                     alt="Fashion Store">
+            </div>
+
+            <div class="col-lg-6">
+                <h3 class="fw-bold mb-3">Who We Are</h3>
+
+                <p class="text-secondary">
+                    FashionHub brings you the latest fashion trends for men and women.
+                    We focus on quality products, affordable prices and excellent
+                    customer service.
+                </p>
+
+                <p class="text-secondary">
+                    Our mission is to help everyone express their unique style through
+                    comfortable and fashionable clothing.
+                </p>
+
+                <div class="row mt-4">
+
+                    <div class="col-4 text-center">
+                        <h3 class="text-primary fw-bold">5K+</h3>
+                        <p>Customers</p>
+                    </div>
+
+                    <div class="col-4 text-center">
+                        <h3 class="text-primary fw-bold">500+</h3>
+                        <p>Products</p>
+                    </div>
+
+                    <div class="col-4 text-center">
+                        <h3 class="text-primary fw-bold">50+</h3>
+                        <p>Brands</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- contact us -->
+
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Contact Us</h2>
+            <p class="text-muted">
+                Have questions? We'd love to hear from you.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Left Side -->
+            <div class="col-lg-4">
+
+                <div class="card border-0 shadow h-100">
+                    <div class="card-body p-4">
+
+                        <h4 class="mb-4">Get In Touch</h4>
+
+                        <div class="mb-4">
+                            <h6 class="fw-bold">📍 Address</h6>
+                            <p class="text-muted">
+                                Ahmedabad, Gujarat, India
+                            </p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h6 class="fw-bold">📞 Phone</h6>
+                            <p class="text-muted">
+                                +91 98765 43210
+                            </p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h6 class="fw-bold">📧 Email</h6>
+                            <p class="text-muted">
+                                support@fashionhub.com
+                            </p>
+                        </div>
+
+                        <div>
+                            <h6 class="fw-bold">🕒 Working Hours</h6>
+                            <p class="text-muted">
+                                Monday - Saturday <br>
+                                9:00 AM - 8:00 PM
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Side -->
+            <div class="col-lg-8">
+
+                <div class="card border-0 shadow">
+                    <div class="card-body p-4">
+
+                        <h4 class="mb-4">Send Message</h4>
+
+                        <form>
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text"
+                                           class="form-control"
+                                           placeholder="Enter your name">
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input type="email"
+                                           class="form-control"
+                                           placeholder="Enter your email">
+                                </div>
+
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Subject</label>
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Subject">
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control"
+                                          rows="5"
+                                          placeholder="Write your message here..."></textarea>
+                            </div>
+
+                            <button class="btn btn-primary btn-lg px-4">
+                                Send Message
+                            </button>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3">
+  <p class="mb-0">© 2026 FashionHub. All Rights Reserved.</p>
+</footer>
+
+<script src="js/bootstrap.bundle.js"></script>
+
+</body>
+</html>

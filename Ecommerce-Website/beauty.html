@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Beauty Collection</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        overflow-x: hidden;
+      }
+      nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 22px 8%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        background-color: #f4f5f7;
+        backdrop-filter: blur(12px);
+      }
+
+      .logo {
+        font-size: 34px;
+        font-weight: 700;
+        background: linear-gradient(to right, #677e88, #1e3c51);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .serch_bar {
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+
+      .serch_bar input {
+        width: 450px;
+        padding: 10px 40px 10px 15px;
+        border: 2px solid grey;
+        border-radius: 25px;
+        outline: none;
+        font-size: 16px;
+      }
+
+      .search_icon {
+        position: absolute;
+        right: 15px;
+        font-size: 18px;
+        color: grey;
+        cursor: pointer;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 35px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: rgb(157, 156, 156);
+        font-size: 18px;
+        transition: 0.4s;
+        position: relative;
+      }
+
+      nav ul li a:hover {
+        color: #f57c42;
+      }
+
+      /* =========================
+   WOMEN PAGE
+========================= */
+
+      .section-title {
+        margin-top: 140px;
+        text-align: center;
+        font-size: 50px;
+        color: #1e3c51;
+        margin-bottom: 50px;
+      }
+
+      .products {
+        width: 90%;
+        margin: 0 auto 70px;
+      }
+
+      .products h2 {
+        font-size: 32px;
+        color: #2f4e64;
+        margin-bottom: 30px;
+        padding-left: 10px;
+        border-left: 5px solid #f57c42;
+      }
+
+      .pro-row1 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+      }
+
+      .card1 {
+        background: #f4f5f7;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: 0.4s;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      }
+
+      .card1:hover {
+        transform: translateY(-8px);
+      }
+
+      .card1 img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .card1-content {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .card1-content h5 {
+        font-size: 20px;
+        color: #1e3c51;
+        margin-bottom: 10px;
+      }
+
+      .price {
+        font-size: 18px;
+        font-weight: 600;
+        color: #f57c42;
+        margin-bottom: 15px;
+      }
+
+      .card1-content button {
+        padding: 12px 25px;
+        border: none;
+        border-radius: 30px;
+        background: linear-gradient(to right, #44565e, #204153);
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .card1-content button:hover {
+        background: #f57c42;
+      }
+
+      /* Section Divider */
+
+      .products:not(:last-of-type) {
+        padding-bottom: 50px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      footer {
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .content {
+        text-align: left;
+        padding: 160px 40px 50px 70px;
+        width: 80%;
+        display: flex;
+        gap: 0px;
+      }
+
+      .footer-row-left {
+        justify-content: center;
+        width: 25%;
+      }
+
+      .footer-row-left h4 {
+        font-size: 22px;
+        color: #4f4e4e;
+      }
+      footer .footer-row-left li {
+        list-style: none;
+        color: #777;
+        font-size: 18px;
+        margin-top: 10px;
+        padding-top: 4px;
+        justify-content: space-between;
+      }
+      footer .footer-row-left li:hover {
+        color: #f57c42;
+        cursor: pointer;
+      }
+
+      .footer-row-left i {
+        font-size: 25px;
+        color: #777;
+        margin-top: 10px;
+        transition: 0.4s;
+        padding: 5px;
+      }
+
+      .footer-row-left i:hover {
+        color: #f57c42;
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+
+      .footer-row-right {
+        justify-content: center;
+        width: 45%;
+        padding-left: 60px;
+      }
+      .footer-row-right h4 {
+        font-size: 22px;
+        color: #4f4e4e;
+      }
+      footer .footer-row-right p {
+        color: #777;
+        line-height: 30px;
+        font-size: 18px;
+        margin-top: 10px;
+      }
+
+      footer .footer-row-right input {
+        padding: 15px;
+        width: 100%;
+        color: #777;
+        border: 1px solid #9b9898;
+        font-size: 18px;
+        margin-top: 19px;
+        outline: none;
+      }
+
+      .footer-btn {
+        padding: 17px 20px;
+        width: 100%;
+        align-items: center;
+        margin-top: 19px;
+        border: none;
+        background: black;
+        color: white;
+        cursor: pointer;
+      }
+      .footer-btn:hover {
+        background: #f57c42;
+        transition: 0.4s;
+      }
+
+      .footer-section-line {
+        width: 85%;
+        height: 1px;
+        background: #d3d3d3;
+        margin: 130px auto 20px auto;
+      }
+
+      .footer-bottom {
+        text-align: left;
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      .footer-bottom p {
+        font-size: 18px;
+        color: #777;
+        padding: 5px 0px 5px 0px;
+        margin-left: 200px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .footer-bottom p span {
+        padding-left: 8px;
+        color: #f57c42;
+        font-weight: 600;
+      }
+
+      .footer-bottom ul {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-left: 750px;
+      }
+
+      .footer-bottom ul li {
+        list-style: none;
+        color: #777;
+        font-size: 18px;
+        margin-top: 10px;
+      }
+
+      .footer-bottom ul li:hover {
+        color: #f57c42;
+        cursor: pointer;
+      }
+
+      nav ul li a.active {
+        color: #f57c42;
+        font-weight: 600;
+      }
+
+      nav ul li a.active::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 100%;
+        height: 2px;
+        background: #f57c42;
+      }
+
+      /* =========================
+   RESPONSIVE
+========================= */
+
+      @media (max-width: 1200px) {
+        .pro-row1 {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media (max-width: 992px) {
+        .pro-row1 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .section-title {
+          font-size: 40px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .pro-row1 {
+          grid-template-columns: 1fr;
+        }
+
+        .section-title {
+          font-size: 32px;
+        }
+
+        .products h2 {
+          font-size: 26px;
+        }
+
+        .card1 img {
+          height: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="logo">
+        <img
+          src="https://htmldemo.net/reid/reid/assets/img/logo/logo.png"
+          alt=""
+        />
+      </div>
+
+      <div class="serch_bar">
+        <input
+          type="search"
+          name="search"
+          placeholder="search what do you want?"
+        />
+
+        <span class="search_icon">🔍</span>
+      </div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <h1 class="section-title">Beauty Collection</h1>
+
+    <section class="products">
+      <h2>Lipsticks</h2>
+
+      <div class="pro-row1">
+        <div class="card1">
+          <img
+            src="https://m.media-amazon.com/images/I/61Y8MB8reRL._SL1500_.jpg"
+          />
+          <div class="card1-content">
+            <h5>Designer Kurti</h5>
+            <div class="price">$49</div>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+
+        <div class="card1">
+          <img
+            src="https://media6.ppl-media.com/tr:h-750,w-750,c-at_max,dpr-2/static/img/product/307507/lakme-cushion-matte-lipstick-pink-caramel-4-5g-74_13_display_1687671913_f7b150d3.jpg"
+          />
+          <div class="card1-content">
+            <h5>Designer Kurti</h5>
+            <div class="price">$49</div>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+
+        <div class="card1">
+          <img
+            src="https://swissbeauty.in/cdn/shop/files/SB-S6_201RussianRed_dc5c3663-8473-45f4-a950-ace08d5e6327.jpg?v=1748634874"
+          />
+          <div class="card1-content">
+            <h5>Designer Kurti</h5>
+            <div class="price">$49</div>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+
+        <div class="card1">
+          <img
+            src="https://m.media-amazon.com/images/I/61082F9AJZL._SL1500_.jpg"
+          />
+          <div class="card1-content">
+            <h5>Designer Kurti</h5>
+            <div class="price">$49</div>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <h2>Kajal</h2>
+
+      <div class="pro-row1">
+        <div class="card1">
+          <img
+            src="https://newassets.apollo247.com/pub/media/catalog/product/l/a/lak0260_1.jpg"
+          />
+          <div class="card1-content">
+            <h5>Designer Kurti</h5>
+            <div class="price">$49</div>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+
+        <div class="card1">
+          <img
+            src="https://www.bigbasket.com/media/uploads/p/l/40007167-2_2-lakme-eyeconic-kajal.jpg"
+          />
+          <div class="card1-content">
+            <h5>Designer Kurti</h5>
+            <div class="price">$49</div>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+
+        <div class="card1">
+          <img
+            src="https://cdn.grofers.com/da/cms-assets/cms/product/f7ce6014-8ad7-4b17-914b-21837c607249.jpg"
+          />
+          <div class="card1-content">
+            <h5>Designer Kurti</h5>
+            <div class="price">$49</div>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+
+        <div class="card1">
+          <img
+            src="https://images-static.nykaa.com/media/catalog/product/a/3/a3fbb628901030644535_0.jpg"
+          />
+          <div class="card1-content">
+            <h5>Designer Kurti</h5>
+            <div class="price">$49</div>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <h2>Perfumes</h2>
+
+      <div class="pro-row1">
+        <div class="card1">
+          <img
+            src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTExL3JtNzg3ZGVzaWduLXNjZW5lY3JlYXRvci1mbGF0bGF5LXdhLTAwNy5qcGc.jpg"
+          />
+          <div class="card1-content">
+            <h5>Designer Kurti</h5>
+            <div class="price">$49</div>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+
+        <div class="card1">
+          <img
+            src="https://www.abelyperfume.com/wp-content/uploads/2023/09/ABD72-100.jpg"
+          />
+          <div class="card1-content">
+            <h5>Designer Kurti</h5>
+            <div class="price">$49</div>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+
+        <div class="card1">
+          <img
+            src="https://i.etsystatic.com/34310988/r/il/893dfa/4236483221/il_fullxfull.4236483221_b25f.jpg"
+          />
+          <div class="card1-content">
+            <h5>Designer Kurti</h5>
+            <div class="price">$49</div>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+
+        <div class="card1">
+          <img
+            src="https://www.louisvuitton.com/images/is/image/lv/FRAGRANCE_IMAGINATION_June25_DII.jpg?wid=2400"
+          />
+          <div class="card1-content">
+            <h5>Designer Kurti</h5>
+            <div class="price">$49</div>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <h2>Makeup Kits</h2>
+
+      <div class="pro-row1">
+        <div class="card1">
+          <img
+            src="https://i.pinimg.com/736x/00/41/49/0041497cdd85b88d964e113ccc56fd75.jpg"
+          />
+          <div class="card1-content">
+            <h5>Designer Kurti</h5>
+            <div class="price">$49</div>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+
+        <div class="card1">
+          <img
+            src="https://i.pinimg.com/originals/95/b5/42/95b54247073933b7f10da7efcc3d9052.jpg"
+          />
+          <div class="card1-content">
+            <h5>Designer Kurti</h5>
+            <div class="price">$49</div>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+
+        <div class="card1">
+          <img
+            src="https://i.pinimg.com/originals/e5/a0/ac/e5a0ac5a9c4805eaa8957c33753cba60.jpg"
+          />
+          <div class="card1-content">
+            <h5>Designer Kurti</h5>
+            <div class="price">$49</div>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+
+        <div class="card1">
+          <img
+            src="https://i.pinimg.com/originals/9e/01/75/9e0175997b51a84fc928514aa563f325.jpg"
+          />
+          <div class="card1-content">
+            <h5>Designer Kurti</h5>
+            <div class="price">$49</div>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer-section-line"></div>
+
+    <footer>
+      <div class="content">
+        <div class="footer-row-left">
+          <h4>Information</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Delivery Information</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+            <li>Contact Us</li>
+            <li>Returns</li>
+          </ul>
+        </div>
+
+        <div class="footer-row-left">
+          <h4>Extras</h4>
+          <ul>
+            <li>Brands</li>
+            <li>Gift Certificates</li>
+            <li>Affiliate</li>
+            <li>Specials</li>
+            <li>Site Map</li>
+            <li>My Account</li>
+          </ul>
+        </div>
+
+        <div class="footer-row-left">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>Address:Your address goes here</li>
+            <li>Phone: 9825514862</li>
+            <li>Email: demo@example.com</li>
+          </ul>
+
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-pinterest-p"></i>
+        </div>
+
+        <div class="footer-row-right">
+          <h4>Join Our Newsletter Now</h4>
+          <p>
+            Exceptional quality. Ethical factories. Sign up to enjoy free U.S.
+            shipping and returns on your first order.
+          </p>
+          <input type="email" placeholder="Enter Your Email Address here.." />
+          <button class="footer-btn">SUBSCRIBE!</button>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer-section-line"></div>
+
+    <div class="footer-bottom">
+      <p>© 2026 <b>Reid</b> Mede with ❤️ by <span> HasThemes</span>.</p>
+
+      <ul>
+        <li>Order History</li>
+        <li>Wish List</li>
+        <li>Newsletter</li>
+      </ul>
+    </div>
+  </body>
+</html>

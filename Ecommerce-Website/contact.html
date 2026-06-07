@@ -3,111 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - HappyShop</title>
-    <link rel="stylesheet" href="home.css" />
-
-    <style>
-      .contact-section {
-        padding: 150px 8% 100px;
-      }
-
-      .contact-box {
-        max-width: 700px;
-        margin: auto;
-        background: rgba(255, 255, 255, 0.08);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(15px);
-        padding: 40px;
-        border-radius: 30px;
-      }
-
-      .contact-box h2 {
-        text-align: center;
-        font-size: 45px;
-        margin-bottom: 30px;
-      }
-
-      .input-box {
-        margin-bottom: 25px;
-      }
-
-      .input-box input,
-      .input-box textarea {
-        width: 100%;
-        padding: 15px;
-        border: none;
-        outline: none;
-        border-radius: 15px;
-        background: #2b384d;
-        color: white;
-        font-size: 16px;
-      }
-
-      .input-box textarea {
-        resize: none;
-        height: 150px;
-      }
-
-      .contact-btn {
-        width: 100%;
-        padding: 15px;
-        border: none;
-        border-radius: 40px;
-        font-size: 18px;
-        cursor: pointer;
-        color: white;
-        background: linear-gradient(to right, #38bdf8, #ec4899);
-        transition: 0.4s;
-      }
-
-      .contact-btn:hover {
-        transform: scale(1.03);
-      }
-    </style>
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Document</title>
   </head>
-
   <body>
-    <!-- Navigation -->
-
+    <!-- Navigation Bar -->
     <nav>
-      <div class="logo">HappyShop</div>
+      <div class="logo">
+        <img
+          src="https://htmldemo.net/reid/reid/assets/img/logo/logo.png"
+          alt=""
+        />
+      </div>
 
+      <div class="serch_bar">
+        <input
+          type="search"
+          name="search"
+          placeholder="search what do you want?"
+        />
+
+        <span class="search_icon">🔍</span>
+      </div>
       <ul>
         <li><a href="home.html">Home</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
 
-    <!-- Contact Form -->
-
     <section class="contact-section">
-      <div class="contact-box">
-        <h2>Contact Us</h2>
+      <div class="contact-content-left">
+        <h1>Contact Us</h1>
+        <p>
+          Claritas est etiam processus dynamicus, qui sequitur mutationem
+          consuetudium lectorum. Mirum est notare quam littera gothica, quam
+          nunc putamus parum claram anteposuerit litterarum formas human. qui
+          sequitur mutationem consuetudium lectorum. Mirum est notare quam 🙂
+        </p>
+        <div class="section-line"></div>
+        <p>
+          <i class="fa-solid fa-location-dot"></i> Address : Your address goes
+          here.
+        </p>
+        <div class="section-line"></div>
+        <p><i class="fa-solid fa-phone"></i> Phone : 9825514862</p>
+        <div class="section-line"></div>
 
-        <form>
-          <div class="input-box">
-            <input type="text" placeholder="Enter Your Name" />
-          </div>
+        <p><i class="fa-solid fa-envelope"></i> Email: demo@example.com</p>
+      </div>
 
-          <div class="input-box">
-            <input type="email" placeholder="Enter Your Email" />
-          </div>
+      <div class="contact-content-right">
+        <h1><h1>Customer Support</h1></h1>
 
-          <div class="input-box">
-            <textarea placeholder="Enter Your Message"></textarea>
-          </div>
+        <div class="contact-form">
+          <input type="text" placeholder="Name *" />
+          <input type="email" placeholder="Email *" />
+          <input type="text" placeholder="Subject *" />
+          <textarea placeholder="How can we help you ?"></textarea>
 
-          <button class="contact-btn">Send Message</button>
-        </form>
+          <button class="contact-btn">SEND MESSAGE</button>
+        </div>
       </div>
     </section>
 
-    <!-- Footer -->
+    <div class="section-line"></div>
 
     <footer>
-      <p>&copy; 2026 HappyShop | Designed By Kashifa</p>
+      <div class="content">
+        <div class="footer-row-left">
+          <h4>Information</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Delivery Information</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+            <li>Contact Us</li>
+            <li>Returns</li>
+          </ul>
+        </div>
+
+        <div class="footer-row-left">
+          <h4>Extras</h4>
+          <ul>
+            <li>Brands</li>
+            <li>Gift Certificates</li>
+            <li>Affiliate</li>
+            <li>Specials</li>
+            <li>Site Map</li>
+            <li>My Account</li>
+          </ul>
+        </div>
+
+        <div class="footer-row-left">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>Address:Your address goes here</li>
+            <li>Phone: 9825514862</li>
+            <li>Email: demo@example.com</li>
+          </ul>
+
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-pinterest-p"></i>
+        </div>
+
+        <div class="footer-row-right">
+          <h4>Join Our Newsletter Now</h4>
+          <p>
+            Exceptional quality. Ethical factories. Sign up to enjoy free U.S.
+            shipping and returns on your first order.
+          </p>
+          <input type="email" placeholder="Enter Your Email Address here.." />
+          <button class="footer-btn">SUBSCRIBE!</button>
+        </div>
+      </div>
     </footer>
+
+    <div class="footer-section-line"></div>
+
+    <div class="footer-bottom">
+      <p>© 2026 <b>Reid</b> Mede with ❤️ by <span> HasThemes</span>.</p>
+
+      <ul>
+        <li>Order History</li>
+        <li>Wish List</li>
+        <li>Newsletter</li>
+      </ul>
+    </div>
   </body>
 </html>
